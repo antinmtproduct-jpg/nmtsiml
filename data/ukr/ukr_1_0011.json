@@ -1,0 +1,24 @@
+{
+  "id": "ukr_1_0011",
+  "subject": "ukrainian",
+  "theme": "Лексикологія: синоніми",
+  "skills": [
+    "Орфографія/Граматика"
+  ],
+  "body": {
+    "text": "Яке слово є синонімом до «принада»?"
+  },
+  "variants": {
+    "multiple_choice": {
+      "options": [
+        "вада",
+        "зваба",
+        "перепона",
+        "відраза"
+      ],
+      "correct": 1,
+      "shuffle": true
+    }
+  },
+  "explanation": ""
+}
