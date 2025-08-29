@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Симуляція НМТ — AntiSchool Exam</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:,">
+
+  <!-- MathJax для рендеру формул -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <!-- Ядро та рендерери -->
+  <script defer src="../engine/loader.js"></script>
+  <script defer src="../engine/renderers.js"></script>
+  <script defer src="../engine/scoring.js"></script>
+  <script defer src="../modes/sim.js"></script>
+</head>
+<body class="page-sim">
+  <!-- HEADER -->
+  <header id="HEADER" class="app-header">
+    <div class="container header-row">
+      <a class="brand-min" href="../index.html" aria-label="На головну">⟵</a>
+
+      <div class="subject-badge" id="SUBJECT_BADGE" data-subject="math">Математика</div>
+
+      <div class="header-info">
+        <div class="counter" id="COUNTER">Питання 1 / 1</div>
+        <div class="timer" id="TIMER" aria-live="polite">00:00</div>
+        <div class="saved" id="SAVED" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar" id="PROGBAR" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container app-main">
+    <section id="STAGE" class="stage">
+      <div class="q-card"><div class="q-body">Завантаження…</div></div>
+    </section>
+
+    <nav class="controls">
+      <button id="BTN_PREV" class="btn" type="button" disabled>Назад</button>
+      <div class="gap"></div>
+      <button id="BTN_NEXT" class="btn btn-primary" type="button">Далі</button>
+      <button id="BTN_FINISH" class="btn btn-accent hidden" type="button">Завершити</button>
+    </nav>
+
+    <section id="RESULT" class="result"></section>
+  </main>
+
+  <noscript>
+    <div class="noscript">Для проходження симуляції потрібен JavaScript.</div>
+  </noscript>
+</body>
+</html>
