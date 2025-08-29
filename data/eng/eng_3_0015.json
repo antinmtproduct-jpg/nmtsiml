@@ -1,0 +1,19 @@
+{
+  "id": "eng_3_0015",
+  "subject": "english",
+  "theme": "Too/Enough",
+  "skills": [
+    "Grammar in Context"
+  ],
+  "body": {
+    "text": "Fill in one word: It's not warm ____ to swim."
+  },
+  "variants": {
+    "short_answer": {
+      "answers": [
+        "enough"
+      ]
+    }
+  },
+  "explanation": "'enough' follows the adjective."
+}

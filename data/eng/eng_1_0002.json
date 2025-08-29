@@ -1,0 +1,24 @@
+{
+  "id": "eng_1_0002",
+  "subject": "english",
+  "theme": "Prepositions",
+  "skills": [
+    "Grammar & Vocabulary"
+  ],
+  "body": {
+    "text": "Choose the correct preposition: She is interested ___ science."
+  },
+  "variants": {
+    "multiple_choice": {
+      "options": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ],
+      "correct": 1,
+      "shuffle": true
+    }
+  },
+  "explanation": "'Interested in' is the correct collocation."
+}

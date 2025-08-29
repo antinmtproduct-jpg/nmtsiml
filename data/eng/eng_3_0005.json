@@ -1,0 +1,19 @@
+{
+  "id": "eng_3_0005",
+  "subject": "english",
+  "theme": "Comparatives",
+  "skills": [
+    "Grammar in Context"
+  ],
+  "body": {
+    "text": "Fill in the comparative form: This task is ____ than that one."
+  },
+  "variants": {
+    "short_answer": {
+      "answers": [
+        "easier"
+      ]
+    }
+  },
+  "explanation": "Comparative of 'easy' → easier."
+}

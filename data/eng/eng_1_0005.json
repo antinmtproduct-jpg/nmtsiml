@@ -1,0 +1,24 @@
+{
+  "id": "eng_1_0005",
+  "subject": "english",
+  "theme": "Collocations",
+  "skills": [
+    "Grammar & Vocabulary"
+  ],
+  "body": {
+    "text": "Choose the correct collocation: to _____ a decision."
+  },
+  "variants": {
+    "multiple_choice": {
+      "options": [
+        "do",
+        "make",
+        "have",
+        "take"
+      ],
+      "correct": 1,
+      "shuffle": true
+    }
+  },
+  "explanation": "The collocation is 'make a decision'."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "eng_3_0007",
+  "subject": "english",
+  "theme": "Be going to (future plan)",
+  "skills": [
+    "Grammar in Context"
+  ],
+  "body": {
+    "text": "Complete with one word: I am ____ to visit my grandparents this weekend."
+  },
+  "variants": {
+    "short_answer": {
+      "answers": [
+        "going"
+      ]
+    }
+  },
+  "explanation": "'be going to' future for plans."
+}

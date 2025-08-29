@@ -1,0 +1,19 @@
+{
+  "id": "eng_3_0001",
+  "subject": "english",
+  "theme": "Present Perfect",
+  "skills": [
+    "Grammar in Context"
+  ],
+  "body": {
+    "text": "Complete the sentence with one word: She ____ already left."
+  },
+  "variants": {
+    "short_answer": {
+      "answers": [
+        "has"
+      ]
+    }
+  },
+  "explanation": "She has already left."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "eng_2_0002",
+  "subject": "english",
+  "theme": "Tenses & Use",
+  "skills": [
+    "Use of English"
+  ],
+  "body": {
+    "text": "Match the tense with a typical use."
+  },
+  "variants": {
+    "match": {
+      "left": [
+        "Present Simple",
+        "Present Continuous",
+        "Past Simple",
+        "Present Perfect"
+      ],
+      "options": [
+        "finished actions in the past",
+        "actions happening now / temporary",
+        "habits and facts",
+        "life experience / result now"
+      ],
+      "correctMap": {
+        "0": 2,
+        "1": 1,
+        "2": 0,
+        "3": 3
+      }
+    }
+  },
+  "explanation": ""
+}

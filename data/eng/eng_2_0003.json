@@ -1,0 +1,34 @@
+{
+  "id": "eng_2_0003",
+  "subject": "english",
+  "theme": "Definitions",
+  "skills": [
+    "Use of English"
+  ],
+  "body": {
+    "text": "Match the word with its definition."
+  },
+  "variants": {
+    "match": {
+      "left": [
+        "accurate",
+        "reliable",
+        "efficient",
+        "flexible"
+      ],
+      "options": [
+        "works well without wasting time or energy",
+        "able to change or adapt easily",
+        "correct and exact",
+        "can be trusted"
+      ],
+      "correctMap": {
+        "0": 2,
+        "1": 3,
+        "2": 0,
+        "3": 1
+      }
+    }
+  },
+  "explanation": ""
+}
