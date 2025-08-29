@@ -1,0 +1,25 @@
+{
+  "id": "math_1_0014",
+  "subject": "math",
+  "theme": "Степені та множення",
+  "skills": [
+    "Числа, відсотки та вирази"
+  ],
+  "body": {
+    "text": "Обчисліть вираз: \\(2^3\\cdot 2^{-1}\\cdot 4\\)"
+  },
+  "variants": {
+    "multiple_choice": {
+      "options": [
+        "4",
+        "8",
+        "12",
+        "16",
+        "32"
+      ],
+      "correct": 3,
+      "shuffle": true
+    }
+  },
+  "explanation": "8·\\(\\tfrac{1}{2}\\)=4, 4·4=16"
+}
