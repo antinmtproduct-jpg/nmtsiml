@@ -1,0 +1,19 @@
+{
+  "id": "eng_3_0012",
+  "subject": "english",
+  "theme": "Much/Many",
+  "skills": [
+    "Grammar in Context"
+  ],
+  "body": {
+    "text": "Fill in one word: How ____ money do you have?"
+  },
+  "variants": {
+    "short_answer": {
+      "answers": [
+        "much"
+      ]
+    }
+  },
+  "explanation": "Uncountable noun → much."
+}

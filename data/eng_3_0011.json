@@ -1,0 +1,19 @@
+{
+  "id": "eng_3_0011",
+  "subject": "english",
+  "theme": "Prepositions of time",
+  "skills": [
+    "Grammar in Context"
+  ],
+  "body": {
+    "text": "Fill in one word: My birthday is ___ July."
+  },
+  "variants": {
+    "short_answer": {
+      "answers": [
+        "in"
+      ]
+    }
+  },
+  "explanation": "In + months/years/seasons."
+}

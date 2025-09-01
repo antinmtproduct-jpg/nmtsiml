@@ -1,0 +1,34 @@
+{
+  "id": "eng_2_0009",
+  "subject": "english",
+  "theme": "Irregular Verbs",
+  "skills": [
+    "Use of English"
+  ],
+  "body": {
+    "text": "Match the base form with the past simple."
+  },
+  "variants": {
+    "match": {
+      "left": [
+        "go",
+        "see",
+        "make",
+        "write"
+      ],
+      "options": [
+        "made",
+        "saw",
+        "went",
+        "wrote"
+      ],
+      "correctMap": {
+        "0": 2,
+        "1": 1,
+        "2": 0,
+        "3": 3
+      }
+    }
+  },
+  "explanation": ""
+}

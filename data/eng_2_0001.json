@@ -1,0 +1,34 @@
+{
+  "id": "eng_2_0001",
+  "subject": "english",
+  "theme": "Phrasal Verbs",
+  "skills": [
+    "Use of English"
+  ],
+  "body": {
+    "text": "Match the phrasal verb with its meaning."
+  },
+  "variants": {
+    "match": {
+      "left": [
+        "give up",
+        "look after",
+        "turn on",
+        "pick up"
+      ],
+      "options": [
+        "to take care of",
+        "to switch on",
+        "to quit",
+        "to collect / learn"
+      ],
+      "correctMap": {
+        "0": 2,
+        "1": 0,
+        "2": 1,
+        "3": 3
+      }
+    }
+  },
+  "explanation": ""
+}

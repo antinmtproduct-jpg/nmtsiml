@@ -1,0 +1,24 @@
+{
+  "id": "eng_1_0004",
+  "subject": "english",
+  "theme": "Conditionals (Type 2)",
+  "skills": [
+    "Grammar & Vocabulary"
+  ],
+  "body": {
+    "text": "Choose the correct verb form: If I ____ more time, I would travel a lot."
+  },
+  "variants": {
+    "multiple_choice": {
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "am having"
+      ],
+      "correct": 1,
+      "shuffle": true
+    }
+  },
+  "explanation": "Type 2 conditional uses past simple in the 'if' clause: had."
+}
