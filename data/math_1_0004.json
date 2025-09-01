@@ -1,0 +1,25 @@
+{
+  "id": "math_1_0004",
+  "subject": "math",
+  "theme": "Система лінійних рівнянь",
+  "skills": [
+    "Рівняння та нерівності"
+  ],
+  "body": {
+    "text": "Розв’яжіть систему: \\(\\begin{cases}2x-y=4\\\\x+y=7\\end{cases}\\)"
+  },
+  "variants": {
+    "multiple_choice": {
+      "options": [
+        "\\(\\left(\\tfrac{11}{3};\\tfrac{7}{3}\\right)\\)",
+        "\\((5;2)\\)",
+        "\\((3;4)\\)",
+        "\\(\\left(\\tfrac{11}{3};\\tfrac{10}{3}\\right)\\)",
+        "\\((4;3)\\)"
+      ],
+      "correct": 3,
+      "shuffle": true
+    }
+  },
+  "explanation": "З другого: \\(y=7-x\\). Підстановка: \\(2x-(7-x)=4\\Rightarrow 3x=11\\Rightarrow x=\\tfrac{11}{3},\\ y=\\tfrac{10}{3}\\)"
+}

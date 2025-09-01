@@ -1,0 +1,25 @@
+{
+  "id": "math_1_0007",
+  "subject": "math",
+  "theme": "Площа трапеції",
+  "skills": [
+    "Геометрія (планіметрія)"
+  ],
+  "body": {
+    "text": "У трапеції основи 8 см і 14 см, висота 5 см. Знайдіть площу"
+  },
+  "variants": {
+    "multiple_choice": {
+      "options": [
+        "110",
+        "55",
+        "44",
+        "22",
+        "60"
+      ],
+      "correct": 1,
+      "shuffle": true
+    }
+  },
+  "explanation": "Формула: \\(S=\\tfrac{a+b}{2}\\cdot h=\\tfrac{22}{2}\\cdot5=55\\)"
+}
