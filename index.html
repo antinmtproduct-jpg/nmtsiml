@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>NMT — вибір предмету</title>
+
+  <!-- той самий шрифт і стилі -->
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="page select">
+  <!-- шапка не чіпаю -->
+  <header class="bar">
+    <div class="container between center header-row">
+      <div class="brand"><img src="assets/logo.svg" alt="" width="32%"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <p class="hero__subtitle">
+        Обери предмет і пройди симуляцію НМТ з авторськими завданнями (щоразу новий набір)
+      </p>        
+      <h1 class="hero__title">
+        Безкоштовні нескінченні симуляції НМТ для твоєї впевненості!
+      </h1>
+      <p class="hero__subtitle">
+        150+ завдань з кожного предмету
+      </p>   
+    </section>
+
+    <section class="subjects">
+      <h2 class="subjects__title">З якого предмета почнемо?</h2>
+
+      <div class="grid-4">
+        <a class="tile tile--pill" href="test.html?subject=ukr" data-subj="ukr">
+          <span class="tile__icon"><img src="assets/ukr.png" alt="" width="100%"></span><span>Українська мова</span>
+        </a>
+        <a class="tile tile--pill" href="test.html?subject=hist" data-subj="hist">
+          <span class="tile__icon"><img src="assets/hist.png" alt="" width="100%"></span><span>Історія України</span>
+        </a>
+        <a class="tile tile--pill" href="test.html?subject=eng" data-subj="eng">
+          <span class="tile__icon"><img src="assets/eng.png" alt="" width="100%"></span><span>Англійська мова</span>
+        </a>
+        <a class="tile tile--pill" href="test.html?subject=math" data-subj="math">
+          <span class="tile__icon"><img src="assets/math.png" alt="" width="100%"></span><span>Математика</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+    <script>
+    $(function(){
+        let selectedHref = null;
+
+        $('.grid-4 .tile').on('click', function(e){
+        if (e.ctrlKey || e.metaKey) return;
+
+        const hasNext = $('#go-next').length > 0;
+        if (!hasNext) {
+            // Немає кнопки "Далі" — дозволяємо звичайний перехід за посиланням
+            return; // без preventDefault
+        }
+
+        // Є кнопка "Далі" — працюємо в режимі вибору
+        e.preventDefault();
+        $('.grid-4 .tile').removeClass('tile--active');
+        $(this).addClass('tile--active');
+        selectedHref = this.getAttribute('href');
+        $('#go-next').prop('disabled', false);
+        });
+
+        $('#go-next').on('click', function(){
+        if (selectedHref) window.location.href = selectedHref;
+        });
+    });
+    </script>
+
+</body>
+</html>

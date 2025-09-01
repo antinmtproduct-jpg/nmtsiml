@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>NMT — результат</title>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]}};</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://unpkg.com/inputmask@5.0.8/dist/inputmask.min.js"></script>
+
+  <!-- локальна стилізація карток аналізу -->
+  <style>
+    .analysis-item{padding:12px 14px;border-radius:12px;margin-bottom:10px;background:#f7f7fb;border-left:4px solid #c9c9d6}
+    .analysis-item.ok{background:#f1fbf3;border-left-color:#2ecc71}
+    .analysis-item.wrong{background:#fff5f5;border-left-color:#e74c3c}
+    .analysis-item.skip{background:#f7f7f7;border-left-color:#95a5a6}
+    .analysis-item .status{font-weight:600;margin-right:8px}
+    .analysis-item.ok .status{color:#2ecc71}
+    .analysis-item.wrong .status{color:#e74c3c}
+    .analysis-item.skip .status{color:#7f8c8d}
+  </style>
+</head>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    Inputmask("+380999999999").mask("#lead-phone");
+    Inputmask("+380999999999").mask("#lead-phone");
+  });
+</script>
+
+<body class="page result">
+  <header class="bar">
+    <div class="container between center header-row">
+      <a class="brand" href="index.html">На головну</a>
+      <div>Результат</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 id="r-subject">Предмет</h2>
+      <div class="row wrap">
+        <div class="stat"><div id="r-correct" class="stat__val">0</div><div class="muted">Правильних</div></div>
+        <div class="stat"><div id="r-wrong" class="stat__val">0</div><div class="muted">Неправильних</div></div>
+        <div class="stat"><div id="r-total" class="stat__val">0</div><div class="muted">Усього</div></div>
+        <div class="stat"><div id="r-time" class="stat__val">00:00</div><div class="muted">Час</div></div>
+        <div class="stat"><div id="r-score" class="stat__val">100</div><div class="muted">Бал НМТ</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <details class="acc">
+        <summary>За темами</summary>
+        <div id="acc-topics"></div>
+      </details>
+      <details class="acc">
+        <summary>За скілами</summary>
+        <div id="acc-skills"></div>
+      </details>
+
+      <!-- було "Розбір помилок" -->
+      <details class="acc">
+        <summary>Аналіз роботи</summary>
+        <div id="acc-analysis"></div>
+      </details>
+    </section>
+
+    <section class="card" style="background-color: #1D19B4; color: #f1fbf3 !important;">
+      <h3>Запишись на пробний урок</h3>
+      <form id="lead" class="lead grid-3" style="color: #f1fbf3 !important;">
+        <div>
+          <label class="label" style="color: #f1fbf3 !important;">Ім’я</label>
+          <input type="text" name="name" required/>
+        </div>
+
+        <div>
+          <label class="label" style="color: #f1fbf3 !important;">Телефон</label>
+          <input type="tel" id="lead-phone"  placeholder="+380951234567"
+               pattern="^\+?[0-9\s\-\(\)]{7,20}$" required />
+        </div>
+
+        <div>
+          <label class="label" style="color: #f1fbf3 !important;">Предмет</label>
+          <!-- select замість input -->
+          <select id="lead-subject" name="subject" class="native-select">
+            <option value="Українська мова">Українська мова</option>
+            <option value="Математика">Математика</option>
+            <option value="Історія України">Історія України</option>
+            <option value="Англійська мова">Англійська мова</option>
+          </select>
+        </div>
+
+        <div style="grid-column:1/-1; width: 100%; display: flex; justify-content: center;">
+          <button class="btn" type="submit"
+                  style="background-color: #f1fbf3; color: #1D19B4; width: 60%; margin-top: 16px;">
+            Надіслати
+          </button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <div class="loading" aria-hidden="true"><div class="spinner"></div></div>
+  <script src="assets/app.js"></script>
+  <script>
+    $("form").on("submit", function(e){
+      e.preventDefault(); $('.loading').addClass('active');
+      $.ajax({url:'send.php',type:'POST',dataType:'json',data:$(this).serialize(),
+        success:function(res){$('.loading').removeClass('active');console.log(res);alert('Дякуємо!');},
+        error:function(err){console.log(err);$('.loading').removeClass('active');alert('Спробуйте пізніше');}
+      });
+    });
+  </script>
+</body>
+</html>
